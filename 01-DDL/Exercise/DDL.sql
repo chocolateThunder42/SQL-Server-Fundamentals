@@ -15,7 +15,8 @@ CREATE TABLE Actors
   ActorID int IDENTITY(1,1) PRIMARY KEY NOT NULL,
   FirstName varchar(120) NULL,
   LastName varchar(120) NULL,
-  DateOfBirth date NULL
+  DateOfBirth date NULL,
+  MovieId int FOREIGN KEY(MovieID) REFERENCES Movies(MovieID)
 );
 GO
 
