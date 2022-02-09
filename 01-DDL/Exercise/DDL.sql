@@ -139,7 +139,6 @@ CREATE TABLE Producers
   ProducerID int IDENTITY(1,1) PRIMARY KEY NOT NULL,
   FirstName varchar(120) NULL,
   LastName varchar(120) NULL,
-  Age int NULL,
   DateOfBirth date NULL,
   PlaceOfBirth varchar(120) NULL,
   CountryOfBirth varchar(120) NULL,
