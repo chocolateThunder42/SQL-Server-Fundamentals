@@ -16,7 +16,7 @@ CREATE TABLE Actors
   FirstName varchar(120) NULL,
   LastName varchar(120) NULL,
   DateOfBirth date NULL,
-  MovieId int FOREIGN KEY(MovieID) REFERENCES Movies(MovieID)
+  MovieID int FOREIGN KEY(MovieID) REFERENCES Movies(MovieID)
 );
 GO
 
@@ -76,7 +76,8 @@ CREATE TABLE Directors
   DateOfBirth date NULL,
   PlaceOfBirth varchar(120) NULL,
   CountryOfBirth varchar(120) NULL,
-  [Image] binary NULL
+  [Image] binary NULL,
+  MovieID int FOREIGN KEY(MovieID) REFERENCES Movies(MovieID)
 )
 GO
 
@@ -110,7 +111,8 @@ CREATE TABLE Writers
   DateOfBirth date NULL,
   PlaceOfBirth varchar(120) NULL,
   CountryOfBirth varchar(120) NULL,
-  [Image] binary NULL
+  [Image] binary NULL,
+  MovieID int FOREIGN KEY(MovieID) REFERENCES Movies(MovieID)
 )
 GO
 
@@ -144,7 +146,8 @@ CREATE TABLE Producers
   DateOfBirth date NULL,
   PlaceOfBirth varchar(120) NULL,
   CountryOfBirth varchar(120) NULL,
-  [Image] binary NULL
+  [Image] binary NULL,
+  MovieID int FOREIGN KEY(MovieID) REFERENCES Movies(MovieID)
 )
 GO
 
@@ -185,7 +188,8 @@ CREATE TABLE Producers
   DateOfBirth date NULL,
   PlaceOfBirth varchar(120) NULL,
   CountryOfBirth varchar(120) NULL,
-  [Image] binary NULL
+  [Image] binary NULL,
+  MovieID int FOREIGN KEY(MovieID) REFERENCES Movies(MovieID)
 )
 GO
 
