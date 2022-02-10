@@ -33,7 +33,7 @@ LastName, BirthDate, BirthPlace and CountryOfBirth
 
 *******/
 
-/*CREATE TABLE ActorUpdates
+CREATE TABLE ActorUpdates
 (
   MovieID int FOREIGN KEY(MovieID) REFERENCES Movies(MovieID),
   FirstName varchar(120) NULL,
@@ -42,7 +42,7 @@ LastName, BirthDate, BirthPlace and CountryOfBirth
   BirthPlace varchar(120) NULL,
   CountryOfBirth varchar(120) NOT NULL
 );
-GO*/
+GO
 
 /********
 
