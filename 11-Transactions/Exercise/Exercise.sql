@@ -18,6 +18,7 @@ BEGIN
     BEGIN TRY
       INSERT INTO Actors (FirstName, LastName, DateOfBirth, MovieID)
 	  VALUES (@FirstName, @LastName, @DateOfBirth, @MovieID)
+	  COMMIT
 	END TRY
 	BEGIN CATCH
 	  PRINT 'Error: ' + error_message()
